@@ -1,3 +1,7 @@
 from django.db import models
 
 # Create your models here.
+class Todo:
+    title = models.CharField(max_length=200)
+    completed = models.BooleanField(default=False)
+    order = models.IntegerField(blank=True, null=True)
